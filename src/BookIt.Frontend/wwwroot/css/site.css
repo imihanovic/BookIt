@@ -16,7 +16,6 @@ html {
     position: relative;
     min-height: 100%;
 }
-
 .sort-icon {
     color: #002266;
     font-size: 16px;
@@ -58,11 +57,14 @@ html {
     border-top-left-radius: .5rem;
     border-top-right-radius: .5rem;
 }
-
+.description{
+    height: 100px;
+}
 .card-body {
     flex: 1 1 auto;
     min-height: 1px;
     padding: 1rem;
+    height: 200px;
 }
 
 .gutters-sm {

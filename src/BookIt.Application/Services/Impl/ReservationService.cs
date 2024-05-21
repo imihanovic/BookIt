@@ -1,15 +1,7 @@
 ﻿using AutoMapper;
 using BookIt.Application.Models.Reservation;
-using BookIt.Application.Models.Restaurant;
-using BookIt.Application.Models.Table;
-using BookIt.Application.Models.User;
 using BookIt.Core.Entities;
 using BookIt.DataAccess.Repositories;
-using BookIt.DataAccess.Repositories.Impl;
-using Microsoft.AspNetCore.Identity;
-using Microsoft.EntityFrameworkCore;
-using Microsoft.EntityFrameworkCore.Metadata.Internal;
-using System;
 
 namespace BookIt.Application.Services.Impl
 {

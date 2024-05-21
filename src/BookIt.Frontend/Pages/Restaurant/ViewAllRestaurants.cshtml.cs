@@ -53,7 +53,7 @@ namespace BookIt.Frontend.Pages.Restaurant
 
             RestaurantModelProperties = _restaurantService.GetRestaurantModelFields();
 
-
+            
             ViewData["CurrentSort"] = sort;
             restaurants = _restaurantService.RestaurantSorting(restaurants, sort);
 

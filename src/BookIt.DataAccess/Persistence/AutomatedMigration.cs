@@ -2,6 +2,7 @@
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.DependencyInjection;
 using BookIt.Core.Entities.Identity;
+using BookIt.DataAccess.Repositories;
 
 namespace BookIt.DataAccess.Persistence;
 

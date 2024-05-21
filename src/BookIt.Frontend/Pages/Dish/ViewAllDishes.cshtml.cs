@@ -19,7 +19,6 @@ namespace BookIt.Frontend.Pages.Dish
         public readonly IRestaurantRepository _restaurantRepository;
 #nullable enable
         public PaginatedList<DishModel> Dishes { get; set; }
-
 #nullable disable
         public List<string> DishModelProperties;
 

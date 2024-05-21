@@ -31,7 +31,6 @@ namespace BookIt.Application.Services.Impl
 
             });
             var dish = config.CreateMapper().Map<Dish>(createDishModel);
-
             await _dishRepository.AddAsync(dish);
             return _mapper.Map<DishModel>(dish);
         }

@@ -37,7 +37,6 @@ namespace BookIt.Frontend.Pages.Dish
         {
             if (!ModelState.IsValid) { return Page(); }
 
-            var dish = _mapper.Map<DishModelForCreate>(NewDish);
             try
             {
                 await _dishService.AddAsync(NewDish);

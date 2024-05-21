@@ -55,13 +55,15 @@ c0.2,0.016,0.398,0.023,0.596,0.023c3.876,0,7.16-2.982,7.469-6.912c0.015-0.188,1.
 c14.961-17.716,39.416-24.153,39.815-24.257C102.141,81.623,104.574,77.552,103.566,73.537z" />	</svg>
 					</div>
 					<div class="card-body text-center">
-						<h5 class="card-title">@dish.DishName</h5>
-						<p class="text-secondary mb-1">@dish.Category</p>
-						<p class="text-secondary mb-1">@dish.Price EUR</p>
+						<h5 class="card-title mb-1">@dish.DishName</h5>
+						<p class="text-secondary mb-2">@dish.Category</p>
+                        <p class="description text-secondary mb-1">@dish.DishDescription</p>
+						<p class="text-secondary mb-1" >@dish.Price EUR</p>
 					</div>
 					<div class="card-footer">
 						@if (User.IsInRole("Manager"))
 						{
+                            
 						<a class="btn btn-outline-primary" asp-page="EditRestaurantDish" asp-route-id="@dish.Id">Edit</a>
 						<form method="post">
 							<button type="submit" asp-page-handler="delete" asp-route-id="@dish.Id" class="btn custom btn-outline-danger col-5"

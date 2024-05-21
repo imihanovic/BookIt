@@ -132,7 +132,6 @@ namespace BookIt.Frontend.Pages.Reservation
                     if (capacity >= numberOfPersons)
                         break;
                 }
-
                 try
                 {
                     await _reservationService.AddAsync(NewReservation);
